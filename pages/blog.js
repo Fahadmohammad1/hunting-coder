@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "../styles/blog.module.css";
 
@@ -7,7 +8,9 @@ const Blog = () => {
       <div className={styles.blogs}>
         <h2>Popular Blogs</h2>
         <div className={styles.blogItem}>
-          <h3>How to Learn Javascript in 2022</h3>
+          <Link href={"/blogpost/learn-javascript"}>
+            <h3>How to Learn Javascript in 2022</h3>
+          </Link>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             porro maiores similique aperiam dicta minus delectus dolorem quae
